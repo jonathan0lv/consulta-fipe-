@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIPE+</title>
+    <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="faixa-vermelha">
+            <p>Consulta FIPE rápida e descomplicada. Seu veículo, seu preço!</strong></p>
+        </div>
+        <div class="faixa-branca">
+            <a href="index.html" class="logo-link">
+                <img src="./img/Fipe+/Fipe+.png" alt="Logo" class="logo fipe+">
+            </a>
+        </div>
+    </header>
+    <div class="main-banner">
+        <main>
+            <h2>Escolha um veículo</h2>
+            <form id="fipe-form">
+                <div class="form-group">
+                    <label for="brand">Marca</label>
+                    <select id="brand" name="brand">
+                        <option value="">Selecione a marca</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="model">Modelo</label>
+                    <select id="model" name="model" disabled>
+                        <option value="">Selecione o modelo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="year">Ano</label>
+                    <select id="year" name="year" disabled>
+                        <option value="">Selecione o ano</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="version">Versão</label>
+                    <select id="version" name="version" disabled>
+                        <option value="">Selecione a versão</option>
+                    </select>
+                </div>
+                <button type="button" id="consultar">Consultar</button>
+            </form>
+        </main>
+    </div>
+    <div class="models-section">
+        <h3>Modelos mais buscados</h3>
+        <div class="models-container">
+            <div class="model-card">
+                <img src="./img/carros/maisbuscados/onix.png" alt="Chevrolet Onix">
+                <span>Chevrolet Onix</span>
+            </div>
+            <div class="model-card">
+                <img src="./img/carros/maisbuscados/corolla.png" alt="Toyota Corolla">
+                <span>Toyota Corolla</span>
+            </div>
+            <div class="model-card">
+                <img src="./img/carros/maisbuscados/civic.png" alt="Honda Civic">
+                <span>Honda Civic</span>
+            </div>
+            <div class="model-card">
+                <img src="./img/carros/maisbuscados/jetta.png" alt="Volkswagen Jetta ">
+                <span>Volkswagen Jetta</span>
+            </div>
+            <div class="model-card">
+                <img src="./img/carros/maisbuscados/hb20.png" alt="Hyundai HB20">
+                <span>Hyundai HB20</span>
+            </div>
+        </div>
+    </div>
+    <div class="models-section">
+        <h3>Consulte carros por marca</h3>
+        <div id="brands-container" class="brands-container">
+            <div class="brand-card">
+                <img src="./img/logo/chevroletlogo.png" alt="Chevrolet">
+                <span>Chevrolet</span>
+            </div>
+            <div class="brand-card">
+                <img src="./img/logo/volkswagenlogo.png" alt="Volkswagen">
+                <span>Volkswagen</span>
+            </div>
+            <div class="brand-card">
+                <img src="./img/logo/fiatlogo.png" alt="Fiat">
+                <span>Fiat</span>
+            </div>
+            <div class="brand-card">
+                <img src="./img/logo/hondalogo.png" alt="Honda">
+                <span>Honda</span>
+            </div>
+            <div class="brand-card">
+                <img src="./img/logo/toyotalogo.png" alt="Toyota">
+                <span>Toyota</span>
+            </div>
+            <div class="brand-card">
+                <img src="./img/logo/hyundailogo.png" alt="Hyundai">
+                <span>Hyundai</span>
+            </div>
+            <div class="brand-card">
+                <img src="./img/logo/renaultlogo.png" alt="Renault">
+                <span>Renault</span>
+            </div>
+            <div class="brand-card">
+                <img src="./img/logo/jeeplogo.png" alt="Jeep">
+                <span>Jeep</span>
+            </div>
+        </div>
+        <div class="view-all">
+            <button id="view-more">Ver todas as marcas</button>
+            <button id="view-less" style="display: none;">Ver menos</button>
+        </div>
+    </div>
+
+    <section class="faq-section">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">O que é a Tabela FIPE? <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>A Tabela FIPE é uma referência para preços de veículos no Brasil, elaborada pela Fundação
+                        Instituto de Pesquisas Econômicas.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Quando surgiu a FIPE? <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>A FIPE foi criada em 1973 e desde então se tornou uma referência para avaliação de veículos.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Por que não encontro o modelo exato do meu veiculo?
+                    <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Nossa aplicação utiliza a API gratuita da Tabela FIPE disponibilizada pela Parallelum.
+                        Caso o modelo exato do seu veículo não apareça, pode
+                        ser devido a limitações da própria base da Tabela FIPE, que pode não conter todos os modelos ou
+                        variações existentes. Além disso, modelos muito novos, importados ou específicos podem não estar
+                        disponíveis na lista fornecida pela API.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Não consigo consultar nenhum veículo, por que?
+                    <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>A API que utilizamos permite até 1000 consultas diárias gratuitas. Quando esse limite é atingido,
+                        novas consultas ficam temporariamente indisponíveis até o dia seguinte.
+                        Por isso, pedimos que você realize apenas as consultas realmente necessárias, para que outros
+                        usuários também possam acessar o serviço. Agradecemos pela compreensão e colaboração! Se o
+                        problema persistir, tente novamente mais tarde.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Os valores da FIPE são atualizados com que
+                    frequência?<span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Os valores da Tabela FIPE são atualizados mensalmente. Isso garante que os dados reflitam as
+                        oscilações do mercado ao longo do tempo.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Por que preciso informar marca, modelo e ano para
+                    consultar?<span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Essas informações são necessárias para identificar com precisão o veículo na base de dados da
+                        FIPE, já que existem diferentes versões e configurações para um mesmo modelo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <footer>
+        &copy; 2024 Tabela FIPE+ | Desenvolvido por <strong> <a class="githublink"
+                href="https://github.com/jonathan0lv">Jonathan Oliveira</a></strong>
+    </footer>
+    </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado - FIPE+</title>
+    <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="consulta.css">
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="faixa-vermelha">
+            <p>Consulta FIPE rápida e descomplicada. Seu veículo, seu preço!</strong></p>
+        </div>
+        <div class="faixa-branca">
+            <a href="index.html" class="logo-link">
+                <img src="./img/Fipe+/Fipe+.png" alt="Logo" class="logo fipe+">
+            </a>
+        </div>
+    </header>
+
+    <section class="result-banner">
+        <div class="result-container">
+            <h1 id="result-title">Carregando...</h1>
+            <p id="result-description">Carregando dados...</p>
+        </div>
+    </section>
+
+    <main class="result-card">
+        <div class="breadcrumb">
+            <span id="breadcrumb-brand">Marca</span> >
+            <span id="breadcrumb-model">Modelo</span> >
+            <span id="breadcrumb-year">Ano</span> >
+            <span id="breadcrumb-version">Versão</span> >
+            <span>SÃO PAULO</span>
+        </div>
+        <div class="result-details">
+            <div class="vehicle-info">
+                <img src="./img/carros/default.png" alt="Veículo Selecionado" id="vehicle-image" />
+                <h2 id="vehicle-title">Carregando...</h2>
+                <p id="vehicle-description">Carregando informações...</p>
+            </div>
+            <div class="price-info">
+                <span class="fipe-logo">fipe</span>
+                <h3 id="vehicle-price">Carregando preço...</h3>
+            </div>
+        </div>
+        <div class="cta-container">
+            <button onclick="alert('Funcionalidade de venda ainda não implementada!')">Vender meu carro</button>
+        </div>
+    </main>
+
+    <section class="faq-section">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">O que é a Tabela FIPE? <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>A Tabela FIPE é uma referência para preços de veículos no Brasil, elaborada pela Fundação
+                        Instituto de Pesquisas Econômicas.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Quando surgiu a FIPE? <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>A FIPE foi criada em 1973 e desde então se tornou uma referência para avaliação de veículos.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Por que não encontro o modelo exato do meu veiculo?
+                    <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Nossa aplicação utiliza a API gratuita da Tabela FIPE disponibilizada pela Parallelum.
+                        Caso o modelo exato do seu veículo não apareça, pode
+                        ser devido a limitações da própria base da Tabela FIPE, que pode não conter todos os modelos ou
+                        variações existentes. Além disso, modelos muito novos, importados ou específicos podem não estar
+                        disponíveis na lista fornecida pela API.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Não consigo consultar nenhum veículo, por que?
+                    <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>A API que utilizamos permite até 1000 consultas diárias gratuitas. Quando esse limite é atingido,
+                        novas consultas ficam temporariamente indisponíveis até o dia seguinte.
+                        Por isso, pedimos que você realize apenas as consultas realmente necessárias, para que outros
+                        usuários também possam acessar o serviço. Agradecemos pela compreensão e colaboração! Se o
+                        problema persistir, tente novamente mais tarde.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Os valores da FIPE são atualizados com que
+                    frequência?<span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Os valores da Tabela FIPE são atualizados mensalmente. Isso garante que os dados reflitam as
+                        oscilações do mercado ao longo do tempo.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Por que preciso informar marca, modelo e ano para
+                    consultar?<span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Essas informações são necessárias para identificar com precisão o veículo na base de dados da
+                        FIPE, já que existem diferentes versões e configurações para um mesmo modelo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Tabela FIPE+ | Desenvolvido por <strong> <a class="githublink"
+                href="https://github.com/jonathan0lv">Jonathan Oliveira</a></strong>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a6032f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e33b3b;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.faixa-vermelha {
+    background: linear-gradient(to right, #8b0000, #a6032f);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.faixa-branca {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo {
+    width: 200px;
+    max-height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.main-banner {
+    background-image: url('./img/backgroundmain.png');
+    background-size: 170rem;
+    background-position: center;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.main-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+h2 {
+    color: #a6032f;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+select:disabled {
+    background-color: #f0f0f0;
+    color: #888;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e33b3b;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.models-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.models-section h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.models-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.model-card {
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 15px;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.model-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.model-card img {
+    width: 100%;
+    max-height: 140px;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.model-card span {
+    display: block;
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.brands-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 40px 30px;
+    justify-items: center;
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+.brand-card {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.brand-card:hover {
+    transform: scale(1.1);
+}
+
+.brand-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
+.brand-card span {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.view-all {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.view-all a {
+    color: #fff;
+    background-color: #ff4d4d;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.view-all a:hover {
+    background-color: #e33b3b;
+}
+
+.faq-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    color: #333;
+}
+
+.faq-question:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.faq-answer {
+    padding: 15px 20px;
+    display: none;
+    background-color: #fff;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+.faq-question span {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.open span {
+    transform: rotate(180deg);
+}
+
+.githublink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.githublink:hover {
+    color: #ff4d4d;
+}
+
+@media screen and (max-width: 768px) {
+    .faixa-branca {
+        justify-content: center;
+        height: 100px;
+        padding: 0;
+    }
+
+    .logo {
+        width: 100px;
+        max-height: 50px;
+    }
+
+    .brands-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .model-card {
+        width: 160px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faixa-branca {
+        justify-content: center;
+        height: 80px;
+    }
+
+    .logo {
+        width: 80px;
+        max-height: 40px;
+    }
+
+    .brands-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .model-card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,238 @@
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a6032f;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.top-banner-text {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.header-bottom {
+    background-color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.faixa-vermelha {
+    background: linear-gradient(to right, #8b0000, #a6032f);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.result-banner {
+    background: linear-gradient(90deg, #e60028 50%, #333 50%);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.result-banner h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.result-banner p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.result-card {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.result-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.vehicle-info img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.vehicle-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.vehicle-info p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.price-info {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.price-info .fipe-logo {
+    display: block;
+    font-size: 1.5rem;
+    color: #a6032f;
+}
+
+.cta-container {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.cta-container button {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-container button:hover {
+    background-color: #e33b3b;
+}
+
+.faq-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    color: #333;
+}
+
+.faq-question:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.faq-answer {
+    padding: 15px 20px;
+    display: none;
+    background-color: #fff;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+.faq-question span {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.open span {
+    transform: rotate(180deg);
+}
+
+.githublink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.githublink:hover {
+    color: #ff4d4d;
+}
+
+@media (max-width: 768px) {
+    .result-card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .vehicle-info img {
+        max-width: 300px;
+    }
+
+    .result-banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .result-banner p {
+        font-size: 1rem;
+    }
+}
