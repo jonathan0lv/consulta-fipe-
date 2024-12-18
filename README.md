@@ -16,6 +16,9 @@ O objetivo do projeto é fornecer uma ferramenta simples e eficiente para que os
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </div>
 
+## 🌐 Deploy
+🔗[Clique aqui para ver o projeto](https://fipemais.netlify.app/)
+
 ## 🔗 Sobre a API Parallelum
 Este projeto utiliza a [API da Tabela FIPE da Parallelum](https://deividfortuna.github.io/fipe/) como fonte de dados.
 
