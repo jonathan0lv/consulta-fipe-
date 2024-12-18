@@ -16,9 +16,6 @@ O objetivo do projeto é fornecer uma ferramenta simples e eficiente para que os
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </div>
 
-## 🌐 Deploy
-🔗[Clique aqui para ver o projeto](https://fipemais.netlify.app/)
-
 ## 🔗 Sobre a API Parallelum
 Este projeto utiliza a [API da Tabela FIPE da Parallelum](https://deividfortuna.github.io/fipe/) como fonte de dados.
 
@@ -27,6 +24,9 @@ A API é uma fonte pública gratuita que fornece informações sobre preços de 
 - **Obter todas as marcas**:
   ```http
   GET https://parallelum.com.br/fipe/api/v1/carros/marcas
+
+  ## 🌐 Deploy
+🔗[Clique aqui para ver o projeto](https://fipemais.netlify.app/)
 
 ## Estrutura do Projeto
 ```
