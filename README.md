@@ -24,6 +24,7 @@ A API é uma fonte pública gratuita que fornece informações sobre preços de 
 - **Obter todas as marcas**:
   ```http
   GET https://parallelum.com.br/fipe/api/v1/carros/marcas
+  ```
 
   ## 🌐 Deploy
 🔗[Clique aqui para ver o projeto](https://fipemais.netlify.app/)
